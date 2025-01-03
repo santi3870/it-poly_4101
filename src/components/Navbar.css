@@ -1,0 +1,108 @@
+/* Navbar layout */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลาง */
+  }
+  
+  /* Hamburger Icon */
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1001;
+  }
+  
+  .dropdown-menu button {
+    background-color: white;
+    color: #333;
+    padding: 10px 15px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .dropdown-menu {
+      width: 90%;
+    }
+  }
+  
+  /* Navbar Items */
+  .navbar-menu {
+    display: flex;
+    gap: 20px; /* ระยะห่างระหว่างปุ่ม */
+  }
+  
+  .navbar-item {
+    color: white; /* สีข้อความ */
+    text-decoration: none; /* ลบเส้นใต้ */
+    font-size: 18px; /* ขนาดตัวอักษร */
+    padding: 10px 15px; /* ช่องว่างในปุ่ม */
+    border-radius: 5px; /* มุมโค้ง */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .navbar-item:hover {
+    background-color: #555; /* สีพื้นหลังเมื่อ hover */
+    color: white;
+  }
+  .navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links li {
+    padding: 10px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #ffd700;
+  }

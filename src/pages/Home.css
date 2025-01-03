@@ -1,0 +1,42 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 70px); /* ลดความสูงของ Navbar */
+    background-color: #f5f5f5;
+    overflow: hidden; /* ซ่อนส่วนเกินที่เลื่อน */
+    padding-top: 70px; /* ระยะห่างสำหรับ Navbar */
+  }
+  
+  .image-slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px; /* ความสูงของ Slider */
+    overflow: hidden; /* ซ่อนภาพที่เกินพื้นที่ */
+  }
+  
+  .image-slider {
+    display: flex;
+    flex-direction: row;
+    animation: slide 15s linear infinite; /* ทำให้เลื่อนอัตโนมัติ */
+    width: max-content; /* รองรับความกว้างทั้งหมด */
+  }
+  
+  .image-slider img {
+    width: 800px; /* ขนาดของแต่ละภาพ */
+    height: 500px;
+    object-fit: cover; /* ให้ภาพเต็มพื้นที่ */
+    border-radius: 10px; /* เพิ่มมุมโค้งให้ภาพ */
+  }
+  
+  /* Animation สำหรับการเลื่อน */
+  @keyframes slide {
+    0% {
+      transform: translateX(0); /* เริ่มต้นที่ตำแหน่งแรก */
+    }
+    100% {
+      transform: translateX(-50%); /* เลื่อนไปครึ่งหนึ่งของภาพทั้งหมด */
+    }
+  }
+  

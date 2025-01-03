@@ -1,0 +1,42 @@
+.courses-container {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .courses-container h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .courses-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .courses-container h2 {
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .courses-container ul {
+    text-align: left;
+    margin: 0 auto;
+    list-style: disc;
+    max-width: 600px;
+  }
+  
+  .courses-container li {
+    font-size: 16px;
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+  
